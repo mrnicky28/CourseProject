@@ -9,7 +9,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>OJJO - lacation</title>
 
 </head>
 <body>
@@ -35,9 +35,21 @@
     </div>
 </header>
 <h1 class="page-title">Контакты</h1>
-<div id="map"></div>
-<section class="location-section">
 
+<section class="info-section">
+    <div id="dd" class="wrapper-info wrapper-dropdown">Наши адреса
+        <ul class="dropdown">
+            <li><a href="https://maps.googleapis.com/maps/search/?api=1&query=47.5951518,-122.3316393">Москва, ул.Новослободская 4</a></li>
+            <li><a href="#">Москва, ул.Тверская 6</a></li>
+            <li><a href="#">Москва, ул.Авиамоторная 10</a></li>
+        </ul>
+    </div>
+    <div class="wrapper-info"></div>
+    <div class="wrapper-info"></div>
+</section>
+
+<section class="map-section">
+    <div id="map"></div>
 </section>
 
 <section class="footer-section">
@@ -107,9 +119,17 @@
         <p>Lorem ipsum</p>
     </div>
 </footer>
-<script src="./js/maps.js"></script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEAFevkph7G3wsjGfKxG6taQW9euATCJ0&map_ids=ca3221c75247b1f4&callback=initMap" async defer>
+
+<script async defer src="js/maps.js">
+
+</script>
+
+<script src="js/dropdown.js">
+
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEAFevkph7G3wsjGfKxG6taQW9euATCJ0&callback=initMap&libraries=&v=weekly">
 </script>
 
 

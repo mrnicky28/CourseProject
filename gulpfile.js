@@ -7,8 +7,7 @@ const imagemin = require("gulp-imagemin");
 const browserSync = require('browser-sync').create();
 
 
-
-function serve(){
+function serve() {
     browserSync.init({
         server: 'build',
         watch: true
@@ -23,6 +22,12 @@ function clean() {
 function copyHTML() {
     return src('src/*.html')
         .pipe(dest('build'));
+}
+
+function JS() {
+    return src('src/**/*.js')
+        .pipe(dest('build/'))
+        .pipe(browserSync.stream());
 }
 
 function transformSCSS() {
@@ -49,27 +54,21 @@ function images() {
         .pipe(browserSync.stream())
 }
 
-function videos() {
-    return src('src/video/**/*.{mp4}')
-        .pipe(dest('build/video'))
-        .pipe(src('src/video/**/*.{mp4}'))
-        .pipe(browserSync.stream())
-}
-
 function watchTasks() {
     watch('src/index.html', copyHTML);
     watch('src/**/*.scss', transformSCSS);
+    watch('src/**/*.js', JS);
     watch('src/img/**/*.{jpg,png,svg,gif,ico,webp}', images);
-    watch('src/video/**/*.{mp4}', videos);
 }
 
 exports.style = transformSCSS;
-exports.videos = videos;
+exports.html = copyHTML;
+exports.js = JS;
 exports.images = images;
 exports.watch = watchTasks;
 exports.clean = clean;
 exports.default = series(
     clean,
-    parallel(copyHTML, transformSCSS, images, videos),
+    parallel(copyHTML, JS, transformSCSS, images),
     parallel(watchTasks, serve)
 );
