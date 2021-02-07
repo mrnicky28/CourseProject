@@ -1,16 +1,31 @@
-div .gmnoprint{
-  right: 0;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+.gm-style-iw {
+background-color: #333333;
 }
-.gm-control-active, .gm-svpc{
-  display: none;
+
+.gm-style-iw-d:first-child{
+  width: 350px;
 }
-.popup-content{
-  color: red;
+.shop-name{
+  width: 100%;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.description{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image-popup{
+  width:100%;
 }
 #map{
   background-color: #d6d6d6;
   width: 1110px;
-  height: 500px;
+  height: 550px;
 }
 
 .map-section{

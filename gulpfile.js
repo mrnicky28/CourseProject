@@ -20,7 +20,7 @@ function clean() {
 }
 
 function copyHTML() {
-    return src('src/*.html')
+    return src('src/**/*.html')
         .pipe(dest('build'));
 }
 
@@ -55,7 +55,7 @@ function images() {
 }
 
 function watchTasks() {
-    watch('src/index.html', copyHTML);
+    watch('src/**/*.html', copyHTML);
     watch('src/**/*.scss', transformSCSS);
     watch('src/**/*.js', JS);
     watch('src/img/**/*.{jpg,png,svg,gif,ico,webp}', images);
