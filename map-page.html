@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>OJJO - lacation</title>
+
+</head>
+<body>
+<header class="wrapper-header">
+    <div class="nav-wrapper">
+        <nav class="menu">
+            <ul class="nav-list list-reset">
+                <li class="list-item"><a class="menu-link" href="#">Контрагентам</a></li>
+                <li class="list-item"><a class="menu-link" href="#">Дизайнерам</a></li>
+                <li class="list-item"><a class="menu-link" href="#">Вакансии</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="./img/header/logo.png" alt="logo">
+
+        <div class="user-data">
+            <a class="search-link menu-link" href="#"><img src="./img/header/gridicons_search.png" alt="">Поиск</a>
+            <label for="account" class="label-account menu-link">Вход/Регистрация</label>
+            <a id="account" class="btn-account btn-default"><img src="./img/header/mdi_account.png" alt="avatar"></a>
+            <a class="favorites" href="#"><img src="./img/header/topcoat_like.png" alt="heard"></a>
+
+        </div>
+
+    </div>
+</header>
+<h1 class="page-title">Контакты</h1>
+
+<section class="info-section">
+    <div id="dd" class="wrapper-info wrapper-dropdown">Наши адреса
+        <ul class="dropdown">
+            <li><a href="https://maps.googleapis.com/maps/search/?api=1&query=47.5951518,-122.3316393">Москва, ул.Новослободская 4</a></li>
+            <li><a href="#">Москва, ул.Тверская 6</a></li>
+            <li><a href="#">Москва, ул.Авиамоторная 10</a></li>
+        </ul>
+    </div>
+    <div class="wrapper-info"></div>
+    <div class="wrapper-info"></div>
+</section>
+
+<section class="map-section">
+    <div id="map"></div>
+</section>
+<section class="footer-section">
+    <div class="wrapper-footer">
+        <div class="inner-container">
+            <h2 class="inner-container__title">Полезные ссылки</h2>
+            <ul class="list-reset list-footer">
+                <li class="link-item">Доставка</li>
+                <li class="link-item">Оплата</li>
+                <li class="link-item">Акции</li>
+                <li class="link-item">Политика конфиденциальности</li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <h2 class="inner-container__title">оплата</h2>
+            <p class="inner-container__text">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Ullamcorper justo,
+                nec, pellentesque.</p>
+            <ul class="list-reset">
+                <li class="payment-methods">
+                    <img src="./img/footer/payment/visa.png" alt="Visa">
+                </li>
+                <li class="payment-methods">
+                    <img src="./img/footer/payment/master-card.png" alt="MasterCard">
+                </li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <h2 class="inner-container__title">контакты</h2>
+            <ul class="list-reset list-footer">
+                <li class="link-item phone-number">8 (812) 234-56-55</li>
+                <li class="link-item phone-number">8 (812) 234-56-55</li>
+                <li class="link-item email">ojjo@ojjo.ru</li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <h2 class="inner-container__title">социальные сети</h2>
+            <p class="inner-container__text">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Ullamcorper justo,
+                nec, pellentesque.</p>
+            <ul class="list-reset">
+                <li class="social-icon">
+                    <img src="./img/icons/youtube.png" alt="YouTube">
+                </li>
+                <li class="social-icon">
+                    <img src="./img/icons/vk.png" alt="Vk">
+                </li>
+                <li class="social-icon">
+                    <img src="./img/icons/facebook.png" alt="Facebook">
+                </li>
+                <li class="social-icon">
+                    <img src="./img/icons/telegramm.png" alt="Telegramm">
+                </li>
+                <li class="social-icon">
+                    <img src="./img/icons/eee.png" alt="eee">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper-footer-content">
+        <p>(c) 2020 OJJO jewelry</p>
+        <p>Договор публичной офферты</p>
+        <p>Контрагентам</p>
+        <p>Lorem ipsum</p>
+    </div>
+</footer>
+
+<script async defer src="js/maps.js">
+
+</script>
+
+<script src="js/dropdown.js">
+
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEAFevkph7G3wsjGfKxG6taQW9euATCJ0&callback=initMap&libraries=&v=weekly">
+</script>
+
+</body>
+</html>
